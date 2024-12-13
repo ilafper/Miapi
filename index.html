@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Prueba Api</h1>
+        <div class="cont">
+            <input class="patata" type="text" placeholder="Buscar...">
+            <button class="buscar">Buscar</button>
+            
+        </div>
+    </header>
+
+    <section class="colocar">
+        <section class="botones">
+            <button id="boton" class="usersall">Mostrar todos los usuarios</button>
+            <button id="boton" class="mostrarPrimer">Crear uno nuevo</button>
+        </section>
+    </section>
+
+    <!-- Formulario oculto -->
+    <section class="formulario-nuevo" style="display: none;">
+        <h2>Crear nuevo usuario</h2>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="ap1">Apellido</label>
+            <input type="text" id="ap1" name="ap1">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion">
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" name="dni">
+            <button class="enviar" type="submit">CREAR</button>
+        </form>
+    </section>
+
+    <h1>USUARIOS</h1>
+    <section class="contenido">
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="datos.js"></script>
+</body>
+</html>
